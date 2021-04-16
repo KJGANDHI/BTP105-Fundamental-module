@@ -33,3 +33,36 @@ void fundamentals(){
     }
     printf("*** End of Indexing Strings Demo ***\n\n");
 }    
+
+
+
+// version 2: Measuring
+
+printf("*** Start of Measuring Strings Demo ***\n");
+char buffer2[80]; // vaiable declaration
+while (TRUE) {
+    printf("Type a string (q - to quit):\n");
+    gets(buffer2); // prompt user the value of buffer2
+    if (strcmp(buffer2, "q") == 0) break; // compares string with letter 'q'
+    printf("The length is %lu\n", strlen(buffer2)); // displays the length of string entered by the user
+}
+printf("*** End of Measuring Strings Demo ***\n\n");
+
+
+// version 3: Copying
+
+printf("*** Start of Copying Strings Demo ***\n");
+
+// variable declaration
+char destination[80];
+char source[80];
+while (TRUE) {
+    destination[0] = '\0';
+    printf("Destination string is reset to empty\n");
+    printf("Type a source string (q - to quit):\n");
+    gets(source); // prompt user source string that is to be copied.
+    if (strcmp(source, "q") == 0) break; // compares string
+    strcpy(destination, source); // copy source string to the destination
+    printf("New destination string is \'%s\':\n", destination); // print new string that is copied to the destination
+}
+printf("*** End of Copying Strings Demo ***\n\n");

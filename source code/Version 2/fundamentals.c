@@ -33,3 +33,17 @@ void fundamentals(){
     }
     printf("*** End of Indexing Strings Demo ***\n\n");
 }    
+
+
+
+// version 2: Measuring
+
+printf("*** Start of Measuring Strings Demo ***\n");
+char buffer2[80]; // vaiable declaration
+while (TRUE) {
+    printf("Type a string (q - to quit):\n");
+    gets(buffer2); // prompt user the value of buffer2
+    if (strcmp(buffer2, "q") == 0) break; // compares string with letter 'q'
+    printf("The length is %lu\n", strlen(buffer2)); // displays the length of string entered by the user
+}
+printf("*** End of Measuring Strings Demo ***\n\n");
